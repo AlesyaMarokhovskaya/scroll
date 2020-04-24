@@ -11,7 +11,7 @@ var scrollVis = function () {
   // define scales - one set of scales for all charts.
   var x0_scale = d3.scaleBand().padding(0.1).range([0, width-(left_right_margin)]);
   var x1_scale = d3.scaleLinear();
-  var y_scale = d3.scaleLinear().range([height - (top_bottom_margin*2),0]);
+  var y_scale = d3.scaleLinear().range([height - (top_bottom_margin),0]);
   // define colours
   //all_colours - used during 1st section when survival rates not needed variable == "both".
   var all_colours = { Men: '#1f78b4', Women: '#a6cee3',all:"grey",
@@ -116,7 +116,7 @@ var scrollVis = function () {
     //set for bar text attributes
     my_group.select(".bar_text")
             .attr("visibility","hidden") //hidden initially
-            .attr("x",function(d){ return x0_scale(d) + (x0_scale.bandwidth()*0.45)})
+            .attr("x",function(d){ return x0_scale(d) + (x0_scale.bandwidth())})
             .attr("y",function(d){return y_scale(d3.max(my_data,function(m){if(m[data_class]==d){return m.row}})) - 15})
             .attr("fill",function(d){ //fill dependent on whether survival is being shown.
               if(fill_type == "both"){
