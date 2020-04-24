@@ -1,6 +1,6 @@
 var scrollVis = function () {
   // define constants (proportions copied from JV)
-  var width = 550;
+  var width = 500;
   var left_right_margin = 10;
   var top_bottom_margin = 90;
   var height = 500;
