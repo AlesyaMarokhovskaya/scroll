@@ -2,14 +2,14 @@ var scrollVis = function () {
   // define constants (proportions copied from JV)
   var width = 500;
   var left_right_margin = 10;
-  var top_bottom_margin = 0;
+  var top_bottom_margin = 80;
   var height = 500;
   var format = d3.format(".0%");
   // define scroll index tracking vars - JV
   var lastIndex = -1;
   var activeIndex = 0;
   // define scales - one set of scales for all charts.
-  var x0_scale = d3.scaleBand().padding(0.1).range([0, width-(left_right_margin*2)]);
+  var x0_scale = d3.scaleBand().padding(0.1).range([0, width-(left_right_margin)]);
   var x1_scale = d3.scaleLinear();
   var y_scale = d3.scaleLinear().range([height - (top_bottom_margin*2),0]);
   // define colours
