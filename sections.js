@@ -35,7 +35,7 @@ var scrollVis = function () {
                            .attr('height', height);
       // perform preprocessing on raw data - comments on logic below
       vis_data = convert_data(rawData);
-      single_elements(vis_data); //draw elements that are not data dependent.
+      //single_elements(vis_data); //draw elements that are not data dependent.
       set_up_sections(vis_data);
     });
 
