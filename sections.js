@@ -2,7 +2,7 @@ var scrollVis = function () {
   // define constants (proportions copied from JV)
   var width = 500;
   var left_right_margin = 10;
-  var top_bottom_margin = 90;
+  var top_bottom_margin = 0;
   var height = 500;
   var format = d3.format(".0%");
   // define scroll index tracking vars - JV
