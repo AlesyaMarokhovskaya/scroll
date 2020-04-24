@@ -206,7 +206,7 @@ function display(data) {
 }
 
 // load data and display
-d3.csv('data/titanic_data.csv', display);
+d3.csv('data_titanic.csv', display);
 
 //data functions.  returns 6 different datasets, all with 891 entries (passenger count)
 //data is split into sections - ie ["male","female"], given a per_row count - ie two_per_row
